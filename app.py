@@ -3,10 +3,9 @@ from blenderbot import BlenderBot
 
 app = Flask(__name__)
 
-model_name = 'facebook/blenderbot-400M-distill'
-model_path = 'model/blenderBot'
+model_path = 'model/blenderBot_fine_tunning'
 print("model is loading...")
-bot = BlenderBot(model_name, model_path)
+bot = BlenderBot(model_path)
 print("model is loaded")
 
 
